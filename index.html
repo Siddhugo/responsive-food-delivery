@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FoodyExpress | Fresh Food, Fast Delivery</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1040px)" href="css/phone.css">
+    <link rel="shortcut icon" href="logo/image-logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="nav-bar">
+        <div id="main-logo"><img src="logo/image-logo.png" alt="FoodyExpress"></div>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#service-container">services</a></li>
+            <li><a href="#clint-section">clients</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+<button id="refreshImagesBtn" class="btn" style="margin: 20px auto; display: block;">🍕 Refresh Food Images</button>
+    <section id="home">
+        <h1 class="h-primary center">Welcome To FoodyExpress</h1>
+        <p>Delicious meals, delivered hot & fresh – right to your doorstep.</p>
+        <p>Explore our curated menu crafted by top chefs.</p>
+        <button class="btn" id="orderBtn">Order Now <i class="fas fa-arrow-right"></i></button>
+    </section>
+
+    <section id="service-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box" data-service="1">
+                <img id="foodImg1" class="service-img" src="background-images/pizza.png" alt="Food item">
+                <h2 class="h-secondary center">Quick Delivery</h2>
+                <p class="center">30‑min delivery or it's free. Hot pizzas, burgers, and more – handled with care.</p>
+            </div>
+            <div class="box" data-service="2">
+                <img id="foodImg2" class="service-img" src="background-images/plate.png" alt="Food item">
+                <h2 class="h-secondary center">Dine‑In Discounts</h2>
+                <p class="center">Exclusive offers for table reservations. Enjoy a fine dine experience at pocket‑friendly prices.</p>
+            </div>
+            <div class="box" data-service="3">
+                <img id="foodImg3" class="service-img" src="background-images/plate.png" alt="Food item">
+                <h2 class="h-secondary center">Catering Events</h2>
+                <p class="center">Weddings, parties, corporate meets – we serve fresh, hygienic meals for any crowd size.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="clint-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clints">
+            <div class="clint-items"><img src="logo/applelogo.png" alt="Apple"></div>
+            <div class="clint-items"><img src="logo/logo-microsoft.png" alt="Microsoft"></div>
+            <div class="clint-items"><img src="logo/image.png" alt="Partner"></div>
+            <div class="clint-items"><img src="logo/logo-microsoft.png" alt="Another client"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" name="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phnumber"><i class="fas fa-phone-alt"></i> Phone</label>
+                    <input type="tel" name="phone" id="phnumber" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Tell us your cravings..."></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Send <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FoodyExpress.com | All rights reserved
+        </div>
+    </footer>
+
+    <!-- Main JavaScript (dynamic images) -->
+    <script src="script.js"></script>
+    <script>
+        // Simple form alert (demo)
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Our team will reach out soon.');
+            this.reset();
+        });
+        document.getElementById('orderBtn')?.addEventListener('click', () => {
+            alert('🚚 Opening order portal soon! Stay tuned.');
+        });
+    </script>
+</body>
+</html>

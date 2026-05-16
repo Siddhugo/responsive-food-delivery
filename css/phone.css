@@ -1,0 +1,105 @@
+/* Phone Responsiveness (max-width: 600px) */
+
+/* Navigation Bar */
+#nav-bar {
+    flex-direction: column;
+    padding: 10px 0;
+}
+#main-logo img {
+    width: 40px;
+    margin: 5px auto;
+}
+#nav-bar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 5px;
+}
+#nav-bar ul li a {
+    font-size: 0.9rem;
+    padding: 5px 12px;
+}
+
+/* Hero Section */
+#home {
+    min-height: 70vh;
+    padding: 1rem;
+}
+.h-primary {
+    font-size: 2rem !important;
+}
+#home p {
+    font-size: 1rem;
+}
+.btn {
+    font-size: 1rem;
+    padding: 8px 18px;
+}
+
+/* Services Section */
+#services {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+.service-img {
+    height: 180px;
+}
+.h-secondary {
+    font-size: 1.5rem;
+}
+.box p {
+    font-size: 0.9rem;
+}
+
+/* Clients Section */
+#clints {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.clint-items {
+    padding: 20px;
+}
+.clint-items img {
+    height: 60px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 30px 15px;
+}
+#contact-box {
+    padding: 20px;
+}
+#contact-box form {
+    width: 100%;
+}
+.form-group label {
+    font-size: 1rem;
+}
+.form-group input, 
+.form-group textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+.submit-btn {
+    font-size: 1rem;
+}
+
+/* Refresh Button (mobile adjustment) */
+#refreshImagesBtn {
+    font-size: 0.9rem;
+    margin: 15px auto !important;
+    width: 80%;
+    display: block;
+}
+
+/* Footer */
+footer {
+    font-size: 0.8rem;
+    padding: 15px;
+}
